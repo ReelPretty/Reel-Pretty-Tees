@@ -42,51 +42,23 @@
   </section>
 
   <!-- SHOP -->
-<section id="shop" class="section">
-  <h2>Shop Coastal Tees</h2>
+<section class="section" id="shop">
+  <h2>Shop Reel Pretty Tees</h2>
 
-  <div class="grid">
-
-    <!-- PRODUCT 1 -->
-    <div class="card">
-      <img src="images/shirt1.jpg" alt="Saltwater Tee">
-      <h3>Saltwater & Sunshine</h3>
-      <p>$25.00</p>
-
-      <a class="btn"
-         href="https://buy.stripe.com/YOUR_LINK_1"
-         target="_blank">
-         Buy Now
-      </a>
-    </div>
-
-    <!-- PRODUCT 2 -->
-    <div class="card">
-      <img src="images/shirt2.jpg" alt="Reel Pretty Tee">
-      <h3>Reel Pretty Classic</h3>
-      <p>$25.00</p>
-
-      <a class="btn"
-         href="https://buy.stripe.com/YOUR_LINK_2"
-         target="_blank">
-         Buy Now
-      </a>
-    </div>
-
-    <!-- PRODUCT 3 -->
-    <div class="card">
-      <img src="images/shirt3.jpg" alt="Coastal Drift Tee">
-      <h3>Coastal Drift</h3>
-      <p>$25.00</p>
-
-      <a class="btn"
-         href="https://buy.stripe.com/YOUR_LINK_3"
-         target="_blank">
-         Buy Now
-      </a>
-    </div>
-
+  <div class="shop-logo">
+    <img src="images/logo.png" alt="Reel Pretty Tees Logo">
   </div>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('coastal')">Coastal</button>
+    <button onclick="filterProducts('school')">School Spirit</button>
+    <button onclick="filterProducts('custom')">Custom Dog Tee</button>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div id="productGrid" class="grid"></div>
 </section>
   <!-- CONTACT -->
   <section id="contact" class="section">
