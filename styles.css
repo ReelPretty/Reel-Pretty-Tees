@@ -6,7 +6,7 @@ body {
   background:
     radial-gradient(circle at top, #e0f7ff 0%, transparent 50%),
     linear-gradient(180deg, #ffffff 0%, #f7fbff 60%, #fef6e4 100%);
-    {
+}
 
 .header {
   text-align: center;
@@ -30,23 +30,17 @@ body {
 }
 
 .product {
-  background: white;
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   text-align: center;
-  border-radius: 10px;
 }
 
 .product img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-  .product {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .footer {
