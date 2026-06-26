@@ -113,3 +113,23 @@ footer {
   background: #222;
   color: white;
 }
+.filters {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 10px 15px;
+  border: none;
+  background: #00a8a8;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #007f7f;
+}
