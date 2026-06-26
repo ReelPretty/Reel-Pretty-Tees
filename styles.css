@@ -1,19 +1,44 @@
-
-body {font-family: Arial, sans-serif; margin:0; background:#f7f7f7; color:#222;}
-header header {
-  padding: 20px;
-  text-align: center;
-  background: white;
-  border-bottom: 1px solid #eee;
-} 
-.logo {
-  max-width: 160px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
 }
-.hero {padding:80px 20px; text-align:center; background:#dff6f5;}
+
+/* HEADER */
+.header {
+  padding: 15px 20px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  max-width: 140px;
+  height: auto;
+}
+
+.nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #dff6f5, #ffffff);
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
 .btn {
   padding: 12px 18px;
   background: #007c7c;
@@ -21,12 +46,69 @@ header header {
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
-  transition: 0.2s ease;
+  margin-top: 15px;
 }
 
-.btn:hover {
-  background: #005f5f;
+/* SECTION */
+.section {
+  padding: 40px 20px;
+  text-align: center;
 }
-.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:15px; padding:20px;}
-.card {background:white; padding:10px; border-radius:10px;}
-.card img {width:100%; height:180px; object-fit:cover; border-radius:8px;}
+
+/* PRODUCT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* PRODUCT CARD (this is what makes it “Shopify-like”) */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #007c7c;
+  color: white;
+  border-radius: 8px;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
